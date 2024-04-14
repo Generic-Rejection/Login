@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home| Covenant University</title>
+    <link rel="stylesheet" href="march6landingpage.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Covenant University</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="march6.html">LOGIN\SIGNUP</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>a birthplace of kings and queens....</span><br>COVENANT UNIVERSITY</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest"> 
+        <a href="march6main.html" id="btn">See More</a>
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water"> 
+    </section>
+    <div class="sec">
+        <h2>About Covenant University</h2>
+        <p>At Covenant University, we pride ourselves on our commitment to academic excellence, character development, and spiritual growth. Founded in 2002 under the visionary leadership of Dr. David Oyedepo, our institution has quickly risen to become one of Nigeria's premier universities, renowned for its holistic approach to education.
+
+            With a focus on innovation and forward-thinking, Covenant University offers a diverse range of undergraduate and postgraduate programs across various disciplines, including Engineering, Natural Sciences, Social Sciences, Business, and Humanities. Our rigorous curriculum is designed to challenge students intellectually while equipping them with the skills and knowledge needed to succeed in today's competitive global landscape.
+            
+            Beyond academics, Covenant University places a strong emphasis on character development and spiritual growth. We believe that education is not just about acquiring knowledge but also about shaping individuals into responsible, ethical leaders who will make a positive impact on society. Through our comprehensive student development programs, we aim to nurture well-rounded individuals who are not only academically proficient but also morally upright and spiritually grounded.
+            
+            At Covenant University, our state-of-the-art facilities provide students with a vibrant and stimulating learning environment. From modern classrooms and laboratories to world-class sports facilities and recreational amenities, we ensure that students have access to everything they need to thrive both academically and personally.
+            
+            But what truly sets Covenant University apart is our unwavering commitment to our core values of spirituality, integrity, responsibility, and excellence. These values permeate every aspect of life on campus, fostering a sense of community and belonging among students, faculty, and staff.
+            
+            Whether you're a prospective student, a current student, or an alumnus, we invite you to join us on this journey of discovery, growth, and transformation at Covenant University. Together, let's build a brighter future for ourselves and for generations to come.</p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water')
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
